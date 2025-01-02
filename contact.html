@@ -41,12 +41,38 @@
             bottom: 0;
             width: 100%;
         }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin: 0.5em 0 0.2em;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #264969;
+            color: #CFCFB4;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #505033;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
-        <p>We’re Here to Help</p>
+        <h1>Big Horn Home Care Services</h1>
+        <p>Compassionate Care in the Comfort of Your Home</p>
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -54,19 +80,23 @@
         <a href="contact.html">Contact</a>
     </nav>
     <main>
-        <h2>Get in Touch</h2>
-        <p>Have questions or want to learn more about our services? Contact us today!</p>
-        <form action="" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to inquire about our services, please reach out to us:</p>
+        <ul>
+            <li><strong>Phone:</strong> 307-431-8328</li>
+            <li><strong>Email:</strong> <a href="mailto:bighorngrp@gmail.com">bighorngrp@gmail.com</a></li>
+        </ul>
+        <form action="https://formspree.io/f/mnqwpevy" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-            <button type="submit">Submit</button>
+            <button type="submit">Send Message</button>
         </form>
     </main>
     <footer>
