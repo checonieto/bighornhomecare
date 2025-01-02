@@ -12,7 +12,7 @@
         }
         header {
             background-color: #000080B;
-            color: #654321;
+            color: #5C4033;
             padding: 1em;
             text-align: center;
         }
@@ -33,13 +33,25 @@
             padding: 2em;
         }
         footer {
-            background-color: #000080B;
-            color: #654321;
+            background-color: #00080B;
+            color: #5C4033;
             text-align: center;
             padding: 1em;
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+        .responsive-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 1em auto;
+        }
+        @media (max-width: 768px) {
+            .responsive-image {
+                width: 100%;
+                object-fit: contain;
+            }
         }
     </style>
 </head>
@@ -53,7 +65,8 @@
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
     </nav>
-     <img src="images/homecare.jpg" alt="Caregiver helping elderly person" class="responsive-image" loading="lazy">
+    <main>
+        <img src="images/homecare1.jpg" alt="Caregiver helping elderly person" class="responsive-image" loading="lazy">
         <!-- Home Page Content -->
         <h2>Welcome to Big Horn Home Care Services</h2>
         <p>We understand that choosing care for your loved ones is a significant decision. Here is a comparison of the benefits of home care versus a nursing home:</p>
